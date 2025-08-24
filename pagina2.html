@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surpresa 💖</title>
+  <style>
+    :root{
+      --rosa-claro:#ffd6eb; /* mesmo tom do projeto anterior */
+      --rosa-medio:#ff4da6;
+      --rosa-escuro:#b30047;
+      --texto:#7a0033;
+      --card:#fff0f7;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 50% -10%, #ffe6f2 0%, var(--rosa-claro) 50%, #ffcfe6 100%);
+      color:var(--texto);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .wrap{
+      min-height:100svh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:100%;
+      max-width:720px;
+      background:var(--card);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 12px 35px rgba(179,0,71,.12);
+      animation:fade .6s ease both;
+    }
+    @keyframes fade{from{opacity:.0;transform:translateY(6px)} to{opacity:1;transform:none}}
+
+    header{
+      text-align:center;
+      margin-bottom:18px;
+    }
+    .heart{
+      font-size:44px; color:var(--rosa-escuro);
+    }
+    h1{
+      margin:8px 0 4px;
+      font-size:clamp(22px, 4vw, 30px);
+      color:var(--rosa-escuro);
+      letter-spacing:.3px;
+    }
+
+    .texto{
+      margin:18px 0 20px;
+      font-size:clamp(16px, 2.8vw, 18px);
+      line-height:1.6;
+    }
+
+    .photo{
+      width:100%;
+      aspect-ratio: 16/9; /* mantém proporção bonita em qualquer tela */
+      object-fit: cover;
+      border-radius:20px;
+      box-shadow:0 8px 24px rgba(179,0,71,.12);
+      display:block;
+    }
+
+    .spacer{height:18px}
+
+    footer{
+      margin-top:22px;
+      text-align:center;
+      font-size:14px;
+      opacity:.8;
+    }
+
+    /* Pequenos toques para telas maiores */
+    @media (min-width: 920px){
+      .card{padding:36px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <header>
+        <div class="heart">❤</div>
+        <h1>Para Mayara</h1>
+
+        <!-- PLAYER DE ÁUDIO -->
+        <audio controls style="width:100%; max-width:400px; margin-top:12px;">
+          <source src="ssstik.io_1756077261523.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio.
+        </audio>
+      </header>
+
+      <p class="texto">
+        Confesso que sou um cara meio ansioso cm voce e queria pedir desculpa em questao a isso, mas acho que você já deve ter percebido né kkkkkkkkkkkk. Mas eu só to fazendo isso pq eu sei o quanto você é uma menina esforçada e ocupada, e quero que saiba que estarei sempre aqui para o que precisar. Admiro muito a sua dedicação e também quero desejar toda a sorte do mundo nesse sonho tão lindo de se tornar enfermeira. Sei que o caminho não é fácil, mas não desista você é forte e vai conseguir chegar onde quiser.
+
+E tbm sei que hoje em dia muita gente da nossa idade não demonstra sentimentos, mas eu quero ser diferente. Quero que você sinta que pode contar comigo e que tem alguém que acredita em você de verdade.
+ah, e também desejo melhoras! Você comentou que não estava se sentindo muito benzinha e que até teve aquele sangramento no nariz… espero de coração que fique bem logo. Pelo menos que essa pequena surpresa consiga colocar um sorriso no seu rosto.
+
+E no final de tudo, mostrar que eu sempre vou torcer por você. 💖
+      </p>
+
+      <!-- FOTO PRINCIPAL: troque o src por sua imagem (ex.: foto1.jpg) -->
+      <img class="photo" src="siteM.jpg" alt="Foto" />
+
+      <div class="spacer"></div>
+
+      <p class="texto">
+        que esta página seja um abraço quando eu não estiver por perto. E realmente sou meio doido msm eu acho kkkkkkkkkkkk
+      </p>
+
+      <!-- FOTO FINAL: troque o src por sua imagem (ex.: foto2.jpg) -->
+      <img class="photo" src="newjpg.jpg" alt="Outra lembrança especial" />
+
+      <footer>
+        Feito com carinho • por Vinicius Garbelini 
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
